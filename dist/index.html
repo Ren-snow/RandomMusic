@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="./style.css" rel="stylesheet" />
     </head>
-    <body class="min-h-screen bg-gradient-to-br from-indigo-500 to-fuchsia-600">
+    <body class="min-h-screen bg-gradient-to-br from-[#1ed760] to-[#121212]">
         <div class="p-9 md:p-12 flex justify-center">
             <div
                 class="bg-white max-w-3xl p-10 rounded-3xl flex-1 shadow-outline transition-all duration-500"
             >
                 <h1
-                    class="text-2xl md:text-3xl font-bold text-center text-fuchsia-700 mb-5"
+                    class="text-2xl md:text-3xl font-bold text-center text-[#168d40] mb-5"
                 >
                     MusicForToday
                 </h1>
@@ -40,18 +40,18 @@
                 <div class="flex justify-center mb-6">
                     <button
                         id="button"
-                        class="px-2 py-3 font-bold bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white leading-none rounded-lg cursor-pointer max-w-52 w-full transition-all delay-300 "
+                        class="px-2 py-3 font-bold bg-gradient-to-b from-[#1ed760] to-[#168d40] text-[#121212] leading-none rounded-lg cursor-pointer max-w-52 w-full hover:opacity-80 transition-all duration-200"
                     >
                         Today, I will listen to...
                     </button>
                 </div>
-                <div class="flex flex-col items-center transition-all duration-500">
-                    <div id="js-image-wrapper" class="transition-all overflow-hidden duration-500 max-h-0 max-w-xs w-full aspect-square shadow shadow-gray-400 mb-3">
+                <div id="js-contents-wrapper" class="flex flex-col items-center transition-all duration-500">
+                    <div id="js-image-wrapper" class="transition-all overflow-hidden duration-400 max-h-0 max-w-xs w-full aspect-square shadow shadow-gray-400">
                         <img id="image" src="#" alt="Album Image" class="aspect-square max-w-xs w-full opacity-0 delay-75 duration-300 ease-linear">
                     </div>
-                    <p id="js-album" class="font-bold leading-none text-lg md:text-2xl mb-1"></p>
-                    <p id="js-artist" class="leading-none font-bold text-gray-500 mb-9"></p>
-                    <a id="albumURL" class="p-3 pr-5 pl-5 bg-black text-white font-bold rounded-[999em]" href="#" target="_blank">Listen to the album on Spotify</a>
+                    <p id="js-album" class="font-bold leading-none text-lg md:text-2xl"></p>
+                    <p id="js-artist" class="leading-none font-bold text-gray-500"></p>
+                    <a id="albumURL" class="p-3 pr-6 pl-6 bg-[#121212] text-white font-bold rounded-[999em] hover:opacity-80 transition-all duration-200 hidden" target="_blank">Listen to the album on <span class="text-[#1ed760]">Spotify</span></a>
                 </div>
             </div>
         </div>
